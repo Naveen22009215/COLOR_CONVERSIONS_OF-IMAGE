@@ -47,6 +47,18 @@ print(f"Saved image saved to: {new_output_path}")
 
 #ACCESSING ROWS AND COLUMNS
 #Type ur code here
+    import random
+    import cv2
+    image=cv2.imread('dip1.jpg',1)
+    image=cv2.resize(image,(400,400))
+    for i in range (150,200):
+      for j in range(image.shape[1]):
+          image[i][j]=[random.randint(0,255),
+                       random.randint(0,255),
+                       random.randint(0,255)] 
+    cv2.imshow('part image',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 # Get the shape of the image (rows, columns, channels)
 
 print(f"Image Shape: Rows={rows}, Columns={columns}, Channels={channels}")
