@@ -20,6 +20,9 @@
 
 #WRITE AN IMAGE
 #Type ur code here
+    import cv2
+    image=cv2.imread('dip1.jpg',0)
+    cv2.imwrite('demos.jpg',image)
 
 # Save the original image to a file
 original_output_path = "image path"
