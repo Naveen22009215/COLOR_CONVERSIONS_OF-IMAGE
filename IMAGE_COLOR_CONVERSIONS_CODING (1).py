@@ -8,7 +8,12 @@
 
 #read and diplay image
 #Type ur code here
-
+    import cv2
+    image=cv2.imread('dip1.jpg',1)
+    image=cv2.resize(image,(400,300))
+    cv2.imshow('NAVEEN',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 # In[ ]:
 
